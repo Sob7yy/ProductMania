@@ -1,0 +1,13 @@
+- 4 html pages
+    - homepage, about, contact us, and cart
+- every page has a navbar and a footer
+- every navbar has tabs
+    - homepage, about, contact us, and cart
+    - cart logo gets updated when a product is added to it
+- every footer has a 'back to top button'
+- Bootstrap can be used in styling
+- in the homepage
+    - Section 1: we have an image slider. Sliding is done by JS
+    - Section 2: showing tabs for product categories and images for every product
+        - every product has an image, name or description, quantity, and an option to add to cart
+        
