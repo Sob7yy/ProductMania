@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet">
+    <title>Cart</title>
+</head>
+
+<body id="cart">
+    <!-- Start Navbar -->
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./homepage.html"><img src="./images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
+                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3" aria-current="page" href="./homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="cart ps-3">
+                    <a class="nav-link disabled" href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div id="cartCount"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Navbar -->
+    <!-- Start Cart Items -->
+
+    <div id="cart-products-container">
+    </div>
+    <!-- End Cart Items -->
+    <!-- Start Footer -->
+
+    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="info">
+                        <img src="./images/logo.png" alt="">
+                        <p class="mb4">All Your Needs in One Place</p>
+                        <div class="copyright">
+                            Created By <span>Mustafa Sobhy</span>
+                            <div>&copy; 2023 - <span>ProductMania Inc.</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center col-md-6 col-lg-2">
+                    <div class="links">
+                        <h5 class="text-light"><a class="nav-link p-lg-3" href="./homepage.html">Home</a></h5>
+                    </div>
+                </div>
+                <div class="center col-md-6 col-lg-2">
+                    <div class="links">
+                        <h5 class="text-light"><a class="nav-link p-lg-3" href="./about.html">About</a></h5>
+                    </div>
+                </div>
+                <div class="center col-md-6 col-lg-2">
+                    <div class="links">
+                        <h5 class="text-light"><a class="nav-link p-lg-3" href="./contact.html">Contact Us</a></h5>
+                    </div>
+                </div>
+                <div class="center col-md-6 col-lg-2">
+                    <div class="links">
+                        <a href="#"><button class="arrow-up"><i class="fa-solid fa-circle-chevron-up"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Footer -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/CartScript.js"></script>
+</body>
+
+</html>

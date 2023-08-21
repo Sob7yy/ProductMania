@@ -36,7 +36,7 @@ email.addEventListener("input", CheckEmail);
 
 
 function CheckEmail() {
-    if (email.value.match(/^\w+@[a-z]{3}\.[a-z]{2,3}$/) <= 3) {
+    if (email.value.match(/^\w+@[a-z]{3,}\.[a-z]{2,3}$/) <= 3) {
         email.style.border = "3px solid red";
         emailError.innerHTML = "Email is not in correct form";
         emailLabel.append(emailError);
@@ -67,7 +67,7 @@ function Validate() {
         nameLabel.append(nameError);
     }
 
-    if (!email.value.match(/^\w+@[a-z]{3}\.[a-z]{2,3}$/)) {
+    if (!email.value.match(/^\w+@[a-z]{3,}\.[a-z]{2,3}$/)) {
         emailError.innerText = "Email is not in correct form";
         emailLabel.append(emailError);
     }
@@ -85,5 +85,24 @@ function Validate() {
     if (message.value == "") {
         messageError.innerText = "Message cannot be empty";
         messageLabel.append(messageError);
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", changeCartCount);
+
+function changeCartCount() {
+    var cartCount = 0;
+    var allCookieList = document.cookie.split(";");
+    allCookieList.forEach(cookie => {
+        if (cookie.includes("Quantity")) {
+            cartCount += parseInt(cookie.substring(cookie.indexOf("=") + 1));
+        }
+    });
+    if (cartCount > 0) {
+        document.getElementById("cartCount").innerText = cartCount;
+    }
+    else {
+        document.getElementById("cartCount").innerText = 0;
     }
 }
