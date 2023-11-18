@@ -8,18 +8,22 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@400;500&display=swap"
             rel="stylesheet"
         />
-        <title>About</title>
+        <title>Homepage</title>
     </head>
 
-    <body id="about">
+    <body>
         <!-- Start Navbar -->
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="./index.html"
+                <a class="navbar-brand" href="#"
                     ><img src="./images/logo.png" alt=""
                 /></a>
                 <button
@@ -37,14 +41,14 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a
-                                class="nav-link p-lg-3"
+                                class="nav-link disabled active p-lg-3"
                                 aria-current="page"
-                                href="./index.html"
+                                href="#"
                                 >Home</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active disabled p-lg-3" href="#"
+                            <a class="nav-link p-lg-3" href="./about.html"
                                 >About</a
                             >
                         </li>
@@ -64,83 +68,63 @@
             </div>
         </nav>
         <!-- End Navbar -->
-        <!-- Start Content -->
-        <div id="about-content" class="container text-center">
-            <h1 id="about-head">About Us</h1>
-            <img src="./images/about1.gif" alt="" />
-            <h2>
-                At ProductMania, our purpose is simple: to live and deliver WOW.
-            </h2>
-            <p>
-                Twenty years ago, we began as a small online retailer that only
-                sold shoes. Today, we still sell shoes — as well as clothing,
-                handbags, accessories, and more. That "more" is providing the
-                very best customer service, customer experience, and company
-                culture. We aim to inspire the world by showing it's possible to
-                simultaneously deliver happiness to customers, employees,
-                vendors, shareholders, and the community in a long-term,
-                sustainable way.
-            </p>
-            <p>
-                We hope that in the future people won't even realize we started
-                selling shoes online. Instead, they'll know ProductMania as a
-                service company that just happens to sell _______.
-            </p>
-            <img src="./images/about2.png" alt="" />
-            <h2>
-                Our 10 Core Values are more than just words. They're a way of
-                life.
-            </h2>
-            <p>
-                In January 2005, ProductMania polled employees on what they
-                thought the company's core values should be. Hundreds of ideals
-                were submitted, which resulted in 37 foundational themes. This
-                list was further narrowed down, and on February 14, 2006, the
-                Core Values were introduced.
-            </p>
-            <p>
-                Besides being distinctive, these beliefs create a framework for
-                ProductMania's actions. These values guide everything we do,
-                including how we interact with our employees, how we interact
-                with our customers and community, and how we interact with our
-                vendors and business partners.
-            </p>
-            <p>
-                As we grow, our processes and strategies may change, but these
-                10 Core Values will remain the same.
-            </p>
-            <div id="fourCs">
-                <div id="fourCs-img">
-                    <img src="./images/about3.gif" alt="" />
+        <!-- Start Landing -->
+        <div class="landing container-fluid">
+            <div class="row row-cols-1">
+                <div id="landing-text" class="col">
+                    <h1>ProductMania</h1>
+                    <h2>All Your needs</h2>
+                    <h2>In One Place</h2>
                 </div>
-                <div id="fourCs-text">
-                    <h2>The Four C's</h2>
-                    <p>
-                        Since our humble beginnings, ProductMania has been a
-                        customer-obsessed company that focuses on delivering a
-                        WOW experience. We aim to inspire the world by showing
-                        it's possible to simultaneously deliver happiness to
-                        customers, as well as employees, vendors, shareholders
-                        and the community, in a long-term, sustainable way.
-                    </p>
-                    <p>
-                        This vision led ProductMania to deliver happiness
-                        through the four C's: Commerce, Customer Service,
-                        Company Culture, Community.
-                    </p>
-                    <p>
-                        As ProductMania continues to transform and scale, we
-                        want to ensure the four C's remain top of mind in our
-                        day-to-day business operations. This means offering
-                        shoppers more clothing styles and variety, reimagining
-                        ways to exceed customer expectations, protecting and
-                        growing our company culture, and serving communities
-                        near and far.
-                    </p>
+                <div id="slider" class="col">
+                    <img
+                        id="landing-img"
+                        src="./images/1.jpg"
+                        class="d-block"
+                    />
+                    <button class="arrowleft" onclick="Previous()">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="arrowright" onclick="Following()">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
-        <!-- End Content -->
+        <!-- End Landing -->
+        <!-- Start Product Categories -->
+        <div id="product-categories">
+            <div class="container">
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item p-3">
+                        <button id="electronics" class="nav-link active">
+                            Electronics
+                        </button>
+                        <!-- <button id="electronics" class="nav-link active">Electronics</button> -->
+                    </li>
+                    <li class="nav-item p-3">
+                        <button id="furniture" class="nav-link">
+                            Furniture
+                        </button>
+                        <!-- <button id="household" class="nav-link">HouseHold</button> -->
+                    </li>
+                    <li class="nav-item p-3">
+                        <button id="fashion" class="nav-link">Fashion</button>
+                        <!-- <button id="fashion" class="nav-link">Fashion</button> -->
+                    </li>
+                    <li class="nav-item p-3">
+                        <button id="groceries" class="nav-link">
+                            Groceries
+                        </button>
+                        <!-- <button id="books" class="nav-link">Books</button> -->
+                    </li>
+                </ul>
+                <div class="container text-center">
+                    <div id="row" class="row justify-content-evenly"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Product Categories -->
         <!-- Start Footer -->
         <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
             <div class="container">
@@ -160,7 +144,9 @@
                     <div class="center col-md-6 col-lg-2">
                         <div class="links">
                             <h5 class="text-light">
-                                <a class="nav-link p-lg-3" href="./index.html"
+                                <a
+                                    class="nav-link active disabled p-lg-3"
+                                    href="#"
                                     >Home</a
                                 >
                             </h5>
@@ -169,9 +155,7 @@
                     <div class="center col-md-6 col-lg-2">
                         <div class="links">
                             <h5 class="text-light">
-                                <a
-                                    class="nav-link active disabled p-lg-3"
-                                    href="#"
+                                <a class="nav-link p-lg-3" href="./about.html"
                                     >About</a
                                 >
                             </h5>
@@ -202,6 +186,6 @@
         <!-- End Footer -->
         <script src="./js/bootstrap.bundle.min.js"></script>
         <script src="./js/all.min.js"></script>
-        <script src="./js/aboutScript.js"></script>
+        <script src="./js/HomeScript.js"></script>
     </body>
 </html>

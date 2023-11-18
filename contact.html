@@ -1,120 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Contact Us</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Rubik:wght@400;500&display=swap"
-        rel="stylesheet">
-    <title>Contact Us</title>
-</head>
-
-<body id="contactUs">
-    <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="./homepage.html"><img src="./images/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
-                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="main">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" p-lg-3 aria-current="page" href="./homepage.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" p-lg-3 href="./about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active disabled" p-lg-3 href="#">Contact Us</a>
-                    </li>
-                </ul>
-                <div class="cart ps-3">
-                    <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <div id="cartCount"></div>
+    <body id="contactUs">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"
+                    ><img src="./images/logo.png" alt=""
+                /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#main"
+                    aria-controls="main"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="main">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link"
+                                p-lg-3
+                                aria-current="page"
+                                href="./index.html"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" p-lg-3 href="./about.html"
+                                >About</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active disabled" p-lg-3 href="#"
+                                >Contact Us</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="cart ps-3">
+                        <a href="./cart.html"
+                            ><i class="fa-solid fa-cart-shopping"></i
+                        ></a>
+                        <div id="cartCount"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
-    <!-- Start Contact Information -->
-    <div class="container">
-        <h1 class="pt-5" id="contactInfoHeader">Contact Information</h1>
-    </div>
-    <div id="contactInfo" class="container d-flex flex-column justify-content-evenly">
-        <label class="textArea" for="name">
-            <input type="text" name="name" value="" id="name" placeholder="  Name">
-        </label>
-        <label class="textArea" for="email">
-            <input type="text" name="email" value="" id="email" placeholder="  Email">
-        </label>
-        <label id="gender" for="gender">Gender:
-            <input class="gender px-3" type="radio" name="gender" value="m">Male
-            <input class="gender px-3" type="radio" name="gender" value="f">Female
-        </label>
-        <label id="inquiryType" for="inquiryType">Type of Inquiry
-            <select id="inquiryType" name="inquiryType">
-                <option value="0">Select</option>
-                <option value="1">Order</option>
-                <option value="2">Delivery</option>
-                <option value="3">Return</option>
-            </select>
-        </label>
-        <label class="textArea" for="message">
-            <textarea name="message" id="message" value="" placeholder="  Message"></textarea>
-        </label>
-        <button id="submit" value="Submit">Submit</button>
-    </div>
-    <!-- End Contact Information -->
-    <!-- Start Footer -->
-    <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+        </nav>
+        <!-- End Navbar -->
+        <!-- Start Contact Information -->
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="info">
-                        <img src="./images/logo.png" alt="">
-                        <p class="mb4">All Your Needs in One Place</p>
-                        <div class="copyright">
-                            Created By <span>Mustafa Sobhy</span>
-                            <div>&copy; 2023 - <span>ProductMania Inc.</span></div>
+            <h1 class="pt-5" id="contactInfoHeader">Contact Information</h1>
+        </div>
+        <div
+            id="contactInfo"
+            class="container d-flex flex-column justify-content-evenly"
+        >
+            <label class="textArea" for="name">
+                <input
+                    type="text"
+                    name="name"
+                    value=""
+                    id="name"
+                    placeholder="  Name"
+                />
+            </label>
+            <label class="textArea" for="email">
+                <input
+                    type="text"
+                    name="email"
+                    value=""
+                    id="email"
+                    placeholder="  Email"
+                />
+            </label>
+            <label id="gender" for="gender"
+                >Gender:
+                <input
+                    class="gender px-3"
+                    type="radio"
+                    name="gender"
+                    value="m"
+                />Male
+                <input
+                    class="gender px-3"
+                    type="radio"
+                    name="gender"
+                    value="f"
+                />Female
+            </label>
+            <label id="inquiryType" for="inquiryType"
+                >Type of Inquiry
+                <select id="inquiryType" name="inquiryType">
+                    <option value="0">Select</option>
+                    <option value="1">Order</option>
+                    <option value="2">Delivery</option>
+                    <option value="3">Return</option>
+                </select>
+            </label>
+            <label class="textArea" for="message">
+                <textarea
+                    name="message"
+                    id="message"
+                    value=""
+                    placeholder="  Message"
+                ></textarea>
+            </label>
+            <button id="submit" value="Submit">Submit</button>
+        </div>
+        <!-- End Contact Information -->
+        <!-- Start Footer -->
+        <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="info">
+                            <img src="./images/logo.png" alt="" />
+                            <p class="mb4">All Your Needs in One Place</p>
+                            <div class="copyright">
+                                Created By <span>Mustafa Sobhy</span>
+                                <div>
+                                    &copy; 2023 - <span>ProductMania Inc.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center col-md-6 col-lg-2">
+                        <div class="links">
+                            <h5 class="text-light">
+                                <a class="nav-link p-lg-3" href="./index.html"
+                                    >Home</a
+                                >
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="center col-md-6 col-lg-2">
+                        <div class="links">
+                            <h5 class="text-light">
+                                <a class="nav-link p-lg-3" href="./about.html"
+                                    >About</a
+                                >
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="center col-md-6 col-lg-2">
+                        <div class="links">
+                            <h5 class="text-light">
+                                <a
+                                    class="nav-link active disabled p-lg-3"
+                                    href="#"
+                                    >Contact Us</a
+                                >
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="center col-md-6 col-lg-2">
+                        <div class="links">
+                            <a href="#"
+                                ><button class="arrow-up">
+                                    <i
+                                        class="fa-solid fa-circle-chevron-up"
+                                    ></i></button
+                            ></a>
                         </div>
                     </div>
                 </div>
-                <div class="center col-md-6 col-lg-2">
-                    <div class="links">
-                        <h5 class="text-light"><a class="nav-link p-lg-3" href="./homepage.html">Home</a></h5>
-                    </div>
-                </div>
-                <div class="center col-md-6 col-lg-2">
-                    <div class="links">
-                        <h5 class="text-light"><a class="nav-link p-lg-3" href="./about.html">About</a></h5>
-                    </div>
-                </div>
-                <div class="center col-md-6 col-lg-2">
-                    <div class="links">
-                        <h5 class="text-light"><a class="nav-link active disabled p-lg-3" href="#">Contact
-                                Us</a></h5>
-                    </div>
-                </div>
-                <div class="center col-md-6 col-lg-2">
-                    <div class="links">
-                        <a href="#"><button class="arrow-up"><i class="fa-solid fa-circle-chevron-up"></i></button></a>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-    <!-- End Footer -->
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/all.min.js"></script>
-    <script src="./js/ContactScript.js"></script>
-</body>
-
+        <!-- End Footer -->
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/all.min.js"></script>
+        <script src="./js/ContactScript.js"></script>
+    </body>
 </html>

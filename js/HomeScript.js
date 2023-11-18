@@ -145,7 +145,7 @@ function AddToCart(product) {
             setCookie(`product${product.id}Quantity`, 1);
         }
         changeCartCount();
-        alert("Hurray! Item Added!");
+        // alert("Hurray! Item Added!");
     }
     else
         alert("Sorry, Out Of Stock");

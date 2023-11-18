@@ -374,7 +374,7 @@ label p {
 }
 
 .card-title {
-    display: inline;
+    /* display: inline; */
 }
 
 .remove-item {
